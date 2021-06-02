@@ -1,0 +1,57 @@
+Introducción al asincronismo
+Acción que no ocurre al mismo tiempo
+
+Input
+
+Thread
+
+Output
+
+Event Loop: manejador de eventos
+
+Memory heap: espacio en memoria compartido para toda nuestra aplicación
+Pila de ejecución (Call Stack)
+Cola de tareas mediante el callback
+
+
+RESUMEN DEL PROYECTO A REALIZAR:
+
+1. Consumir la API y obtener cuántos personajes hay en total.
+2. Obtener el nombre de cada personaje.
+3. Obtener el nombre de la Dimensión a la cual pertenece cada personaje.
+
+
+Que es un callback
+
+Una función de callback es una función que se pasa a otra función como un argumento, que luego se invoca dentro de la función externa para completar algún tipo de rutina o acción.
+
+npm install xhttprequest --save //Para descarga la libreria o modulos node en nuestra carpeta
+
+npm run callback // ejecutar el script planteado en el package.json
+
+ctrl+l para hacer scroll
+
+Promesa
+Async y await
+
+Ventajas Callbacks: 
+        Su funcionamiento es universal por lo que va a funcionar en cualquier navegador (viejo o moderno)
+Desventajas: 
+        Composición tosca, se anida gran cantidad de callback, puede llevar a un callback hell
+        Poco intuitivo
+
+Promesas
+Ventajas: 
+    Facilmente enlazable, con esto se puede hacer gran cantidad de llamadas sin tener errores
+    asincronismo
+Desventajas:
+    No maneja excepciones
+    Propenso a errores sino retornamos el siguiente llamado
+    Requiere un polifile, transpilar a una herramienta como babel para que funcione correctamente en cualquier navegador
+
+Async y await
+Ventajas:
+    Try y catch, más facil de entender los llamados
+Desventajas:
+    Tenemos que esperar por cada uno de los llamados
+    Requiere un polifile, transpilar a una herramienta como babel para que funcione correctamente en cualquier navegador
